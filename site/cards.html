@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>BTB</title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="myscripts.js"></script>
+      <meta name="theme-color" content="#7952b3">
+      <style>
+         * {
+         transition: all 0.3s ease-out;
+         }
+         .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
+         }
+         @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+         }
+         }
+         .carousel-inner {
+         border-radius: 25px 25px 25px 25px;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+         .container#lol {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         border-radius: 25px 25px 25px 25px;
+         }
+         .animate__animated.animate__fadeInBottomRight {
+         background-color: white;
+         border-radius: 25px;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+         .hvr-fade {
+         text-align: center;
+         display: inline-block;
+         vertical-align: middle;
+         -webkit-transform: perspective(1px) translateZ(0);
+         transform: perspective(1px) translateZ(0);
+         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+         overflow: hidden;
+         -webkit-transition-duration: 0.3s;
+         transition-duration: 0.3s;
+         -webkit-transition-property: color, background-color;
+         transition-property: color, background-color;
+         border-radius: 10px;
+         }
+         .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+         color: white;
+         }
+         .col-4#agro {
+         width: 432px;
+         height: 284.8px;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="py-2 bg-light border-bottom">
+         <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+               <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Главная</a></li>
+               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Частным клиентам</a></li>
+               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Бизнес клиентам</a></li>
+               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Контакты</a></li>
+               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">О банке</a></li>
+            </ul>
+            <div class="btn-group">
+               <button type="button" class="btn btn-white"><img src="img/kg.png" alt="0" width="30" height="20">
+               KG</button>
+               <button type="button" class="btn btn-white"><img src="img/rf.svg" alt="1" width="30" height="20">
+               RU</button>
+               <button type="button" class="btn btn-white"><img src="img/eng.svg" alt="2" width="30" height="20">
+               EN</button>
+            </div>
+         </div>
+      </nav>
+      <header class="py-3 mb-4 border-bottom">
+         <div class="container">
+            <div class="row">
+               <div class="col-6 d-flex flex-wrap justify-content-center">
+                  <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                  <img src="img/0002.png" alt="0" width="200" height="100">
+                  </a>
+               </div>
+               <div class="col-6 d-flex flex-wrap justify-content-end">
+                  <h5 class="text-white" style="background-color: white;">dlsfksdfks;dfksldfks;fks;ld</h5>
+                  <h3>Ценим время. Воплощаем мечты!</h3>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                           <h4 class="kred" style="text-align:  center">Кредиты</h4>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                           <h4 class="depos" style="text-align: center">Депозиты</h4>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                           <h4 class="cards" style="text-align: center">Карты</h4>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                           <h4 class="cards" style="text-align: center">Онлайн банкинг</h4>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+               </form>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div class="container fluid">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="1">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/2.jpg" class="d-block w-100" alt="2">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/3.jpg" class="d-block w-100" alt="3">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/4.jpg" class="d-block w-100" alt="4">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/5.jpg" class="d-block w-100" alt="5">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/6.jpg" class="d-block w-100" alt="6">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/7.jpg" class="d-block w-100" alt="7">
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+         </div>
+         <br>
+         <h2 class="Lala" style="text-align: center">Рекомендованные продукты</h2>
+         <br>
+         <div class="container marketing">
+            <div id="hover" class="container">
+               <div class="row">
+                  <div id="agro" class="col-4">
+                     <div id="anime" class="animate__animated animate__fadeInBottomRight animate__delay-1s">
+                        <div id="lol" class="container fluid">
+                           <a href="#" class="hvr-fade text-white">
+                              <img src="img/elcart1.png" style="text-align: center;" alt="228" >
+                              <h4 class="text-center">Агролиния Тушум</h4>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="uchit" class="col-4">
+                     <div id="anime" class="animate__animated animate__fadeInBottomRight animate__delay-2s">
+                        <div id="lol" class="container">
+                           <a href="#" class="hvr-fade text-white">
+                              <br>
+                              <br>
+                              <br>
+                              <img src="img/bookh.png"  alt="229" width="100" height="100">
+                              <br>
+                              <br>
+                              <br>
+                              <h4 class="text-center">Кредит на образование</h4>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="avto" class="col-4">
+                     <div id="anime" class="animate__animated animate__fadeInBottomRight animate__delay-3s">
+                        <div id="lol" class="container">
+                           <a href="#" class="hvr-fade text-white">
+                              <br>
+                              <br>
+                              <br>
+                              <img src="img/carh.png"  alt="230" width="100" height="100">
+                              <br>
+                              <br>
+                              <br>
+                              <h4 class="text-center">Автокредит</h4>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <h1 class="animate__animated animate__fadeInRight">Онлайн сервисы</h1>
+            <hr class="featurette-divider">
+            <img id="btb123" src="img/btb1.png" alt="231" style="border-radius:25px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <br>
+            <br>
+            <div class="col-12 d-flex flex-row-reverse">
+               <h1 class="animate__animated animate__fadeInLeft">Онлайн калькулятор</h1>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette" style="background-color: #56595a; border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="h-100 p-5 text-white rounded-3">
+                           <h2>Быстрый расчет по продуктам:</h2>
+                           <br>
+                           <select class="form-select"style="background-color: white;color: #56595a;">
+                              <option>Кредиты</option>
+                              <option>Депозиты</option>
+                           </select>
+                           <br>
+                           <br>
+                           <select class="form-select"style="background-color: white;color: #56595a;">
+                              <option>Автокредит</option>
+                              <option>Агролиния Тушум</option>
+                              <option>Овердрафт</option>
+                              <option>Ылдам</option>
+                              <option>Жаркын Жашоо</option>
+                           </select>
+                           <br>
+                           <br>
+                           <select class="form-select"style="background-color: white;color: #56595a;">
+                              <option>KGS</option>
+                              <option>USD</option>
+                              <option>RUB</option>
+                           </select>
+                           <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                           <br>
+                           <button class="btn btn-outline-light" type="button">Узнать больше</button>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="h-100 p-5 text-white rounded-3">
+                           <h2>Срок кредитования:</h2>
+                           <br>
+                           <div class="container" style="background-color: white; border-radius: 25px; text-align: center;">
+                              <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
+                           </div>
+                           <br>
+                           <h2>Сумма кредита:</h2>
+                           <div class="container" style="background-color: white; border-radius: 25px; text-align: center;">
+                              <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
+                           </div>
+                           <br>
+                           <div class="container text-black" style="background-color:white; border-radius: 5px;">
+                              <h3>Ежемесячный платеж составит: 27850 сом.</h3>
+                           </div>
+                           <br>
+                           <br>
+                           <div class="d-grid gap-3">
+                              <button class="btn btn-outline-light" style="background-color: #ff4e00;" type="button">
+                                 <h3>Оформить заявку</h3>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <div class="col-6">
+                  <h1 class="animate__animated animate__fadeInLeft">Курс валют</h1>
+               </div>
+               <div class="col-6">
+                  <h1 class="animate__animated animate__fadeInRight d-flex justify-content-end">Новости банка</h1>
+               </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+               <div class="col-4" style="border-radius:25px;">
+                  <div class="container" style="border-radius: 25px;">
+                     <table class="table table-hover" style="border-radius:10px;text-align: center;">
+                        <thead>
+                           <tr>
+                              <th>Валюта</th>
+                              <th>Покупка</th>
+                              <th>Продажа</th>
+                           </tr>
+                        <tbody>
+                           <tr>
+                              <td>USD</td>
+                              <td>82.00</td>
+                              <td>83.00</td>
+                           </tr>
+                           <tr>
+                              <td>EUR</td>
+                              <td>83.00</td>
+                              <td>84.00</td>
+                           </tr>
+                           <tr>
+                              <td>RUB</td>
+                              <td>1.340</td>
+                              <td>1.440</td>
+                           </tr>
+                           <tr>
+                              <td>KZT</td>
+                              <td>0.100</td>
+                              <td>0.200</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                           <label for="currency" class="form-label">Хочу продать:</label>
+                           <input type="currency" class="form-control text-white" id="currency1" placeholder="Введите сумму" name="currency2" style="background-color: #ff4e00;">
+                           <select class="form-select text-white" id="sel1" name="sellist1" style="background-color: #56595a">
+                              <option>KGS</option>
+                              <option>USD</option>
+                              <option>EUR</option>
+                              <option>KZT</option>
+                              <option>RUB</option>
+                           </select>
+                        </div>
+                        <div class="mb-3 mt-3">
+                           <label for="crny" class="form-label">Получу:</label>
+                           <input type="currency3" class="form-control text-white" id="currency4" placeholder="Сумма по курсу банка" name="currency5" style="background-color: #ff4e00;">
+                           <select class="form-select text-white" id="sel1" name="sellist1" style="background-color: #56595a">
+                              <option>KGS</option>
+                              <option>USD</option>
+                              <option>EUR</option>
+                              <option>KZT</option>
+                              <option>RUB</option>
+                           </select>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-8">
+                  <div class="h-100 p-5 text-white" style="background-color: #56595a; border-radius: 25px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                     <h3>Новые тарифы по исходящим платежам SWIFT</h3>
+                     <p>Уважаемые клиенты, Просим принять к сведению, что с 28.07.2022г. вступают в силу...</p>
+                     <button class="btn btn-outline-light" type="button">Подробнее</button>
+                     <br>
+                     <h3>Обновление приложения мобильных платежей «BTB Рау» от Банка «Бай-Тушум»</h3>
+                     <p>Уважаемые клиенты, 13 июля — Банк “Бай-Тушум” информирует о проведении...</p>
+                     <button class="btn btn-outline-light" type="button">Подробнее</button>
+                     <h3>Акция «Приведи клиента МСБ» и получи 2000 сом продолжается!</h3>
+                     <p>У вас есть возможность получить 2.000 сом за каждого привлечённого клиента МСБ...</p>
+                     <button class="btn btn-outline-light" type="button">Подробнее</button>
+                  </div>
+               </div>
+            </div>
+            <br>
+         </div>
+         <div style="background-color: #ff4e00;">
+            <div class="container fluid">
+               <h3 style="color:#ff4e00">lalala</h3>
+            </div>
+            <div class="container text-white">
+               <footer class="py-6">
+                  <div class="row">
+                     <div class="col-4">
+                        <ul class="nav flex-column">
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Новости</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Тендеры</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Стать партнером</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Оставить жалобу</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-4 ">
+                        <ul class="nav flex-column">
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Карта сайта</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Банкоматы и филиалы</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Онлайн очередь</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Финансовая отчетность Банка</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Часто задаваемые вопросы</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-4" style="text-align: right">
+                        <h5>Контакт центр 24/7</h5>
+                        <ul class="nav flex-column">
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">
+                              312 905 805</a>
+                           </li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">
+                              554 905 805</a>
+                           </li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">770 905 805</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">701 905 805</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">W/A: 554 905 805</a></li>
+                           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Telegram: 777 905 805</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                     <p>&copy; ОАО "Банк Бай-Тушум". 2022
+                        <br>
+                        Лиц. № 050 НБ КР
+                     </p>
+                     <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                           <a class="link-dark" href="#">
+                              <svg class="bi" width="24" height="24">
+                                 <use xlink:href="#twitter"/>
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="ms-3">
+                           <a class="link-dark" href="#">
+                              <svg class="bi" width="24" height="24">
+                                 <use xlink:href="#instagram"/>
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="ms-3">
+                           <a class="link-dark" href="#">
+                              <svg class="bi" width="24" height="24">
+                                 <use xlink:href="#facebook"/>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </footer>
+            </div>
+         </div>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   </body>
+</html>
